@@ -1,5 +1,6 @@
 import { SceneManager } from './core/SceneManager';
 import { CubeObject } from './objects/CubeObject';
+import { SphereObject } from './objects/SphereObject';
 import { setupUI } from './ui/Controls';
 import { setupFPSCounter } from './utils/fpsCounter';
 
@@ -15,6 +16,8 @@ setupUI({
     sceneManager.addObject(newCube);
   },
   addSphere: () => {
+    const newSphere = new SphereObject();
+    sceneManager.addObject(newSphere);
   },
   resetScene: () => {
     sceneManager.removeAllObjects();
